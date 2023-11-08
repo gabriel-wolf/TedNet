@@ -18,7 +18,8 @@ const defaultImage = document.querySelector(".default_image");
             }, 200); // 1000 milliseconds (1 second)
         }
 
-        // Set an interval to initiate the crossfade effect at regular intervals (e.g., every 5 seconds)
-        setInterval(crossfadeImages, 30000); // 5000 milliseconds (5 seconds)
+        const randomInterval = Math.random() * (120000 - 30000) + 30000; // Random time between 30 seconds and 2 minutes (in milliseconds)
 
-        crossfadeImages();
+
+        // Set an interval to initiate the crossfade effect at regular intervals (e.g., every 5 seconds)
+        setInterval(crossfadeImages, randomInterval); // 5000 milliseconds (5 seconds)

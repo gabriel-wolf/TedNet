@@ -36,3 +36,4 @@ buttons.forEach(button => {
         goToPage(button);
     });
 });
+
