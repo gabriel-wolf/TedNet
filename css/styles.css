@@ -101,3 +101,13 @@ p {
     background-color: #7f0b93; /* Darker background color on hover */
     border: 3px solid #7f0b93;
   }
+
+
+  .centered-image {
+    text-align: center; /* Center horizontally within its container */
+}
+
+.centered-image img {
+    display: block; /* Display the image as a block element */
+    margin: 0 auto; /* Center horizontally within the containing block */
+}

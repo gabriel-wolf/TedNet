@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="css/centerpopup.css">
     <link rel="stylesheet" href="css/questions.css">
     <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/flashing-text.css">
+    <link rel="stylesheet" href="css/store.css">
+
+
 
 
 </head>
@@ -76,15 +80,17 @@
 
             </div>
             <div class="button-container">
-                <button class="blue" dnp="words">Words</button>
+                <button class="blue" dnp="words"><i class="fas fa-solid fa-cross"></i></button>
                 <button class="blue" dnp="page3">Forget</button>
                 <button class="blue" dnp="contacts">People</button>
+                <button class="blue" dnp="buy">Buy</button>
                 <!-- <button class="blue" dnp="?????">Remember</button> -->
                 <button class="blue" onclick="openPopup()">Remember</button>
-                <button class="blue" dnp="music">Hear</button>
+                <button class="blue" dnp="music"><i class="fas fa-solid fa-music"></i></button>
 
 
             </div>
+
             <br>
           
             <!-- <div class="center-button-container">
@@ -106,7 +112,7 @@
             <button class="blue" dnp="home">Start over</button>
         </div>
         <div id="contacts" style="display: none;">
-            <h1>Contacts</h1>
+            <h1>People</h1>
             
             <!-- nancy is dead -->
             <!-- nancy is calling you -->
@@ -233,130 +239,6 @@
 
 
 
-                          <tr class="candidates-list">
-                            <td class="title">
-                              <div class="thumb">
-                                <img class="img-fluid" src="imgs/cnts/mary.png" alt="">
-                              </div>
-                              <div class="candidate-list-details">
-                                <div class="candidate-list-info">
-                                  <div class="candidate-list-title">
-                                    <h5 class="mb-0">Mary Bradley</h5>
-                                  </div>
-                                  <div class="candidate-list-option">
-                                    <ul class="list-unstyled paddingleftzero">
-                                      <li>Human Resources</li>
-                                      <li>Monroe Township, NJ 08831</li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </td>
-                            <td class="candidate-list-favourite-time text-center">
-                              <!-- <a class="candidate-list-favourite order-2 text-danger" href="#"><i class="fas fa-heart"></i></a> -->
-                              <span class="candidate-list-time order-1 con_center">Anger</span>
-                            </td>
-                            <td>
-                              <ul class="list-unstyled mb-0 d-flex justify-content-end">
-                                <li><a href="#" class="text-primary" data-toggle="tooltip" title="" data-original-title="view"><i class="far fa-eye"></i></a> Why?</li>
-                                <li><a href="#" class="text-info" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a></li>
-                                <li><a href="#" class="text-danger" data-toggle="tooltip" title="" data-original-title="Delete"><i class="far fa-trash-alt"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-                          <tr class="candidates-list">
-                            <td class="title">
-                              <div class="thumb">
-                                <img class="img-fluid" src="imgs/cnts/Bon.png" alt="">
-                              </div>
-                              <div class="candidate-list-details">
-                                <div class="candidate-list-info">
-                                  <div class="candidate-list-title">
-                                    <h5 class="mb-0">Rafael Briggs</h5>
-                                  </div>
-                                  <div class="candidate-list-option">
-                                    <ul class="list-unstyled paddingleftzero">
-                                      <li><i class="fas fa-filter pr-1"></i>Recruitment Consultancy</li>
-                                      <li><i class="fas fa-map-marker-alt pr-1"></i>Haines City, FL 33844</li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </td>
-                            <td class="candidate-list-favourite-time text-center">
-                              <a class="candidate-list-favourite order-2 text-danger" href="#"><i class="fas fa-heart"></i></a>
-                              <span class="candidate-list-time order-1 con_center">Shortlisted</span>
-                            </td>
-                            <td>
-                              <ul class="list-unstyled mb-0 d-flex justify-content-end">
-                                <li><a href="#" class="text-primary" data-toggle="tooltip" title="" data-original-title="view"><i class="far fa-eye"></i></a></li>
-                                <li><a href="#" class="text-info" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a></li>
-                                <li><a href="#" class="text-danger" data-toggle="tooltip" title="" data-original-title="Delete"><i class="far fa-trash-alt"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-                          <tr class="candidates-list">
-                            <td class="title">
-                              <div class="thumb">
-                                <img class="img-fluid" src="imgs/cnts/jim.png" alt="">
-                              </div>
-                              <div class="candidate-list-details">
-                                <div class="candidate-list-info">
-                                  <div class="candidate-list-title">
-                                    <h5 class="mb-0">Vickie Meyer</h5>
-                                  </div>
-                                  <div class="candidate-list-option">
-                                    <ul class="list-unstyled paddingleftzero">
-                                      <li><i class="fas fa-filter pr-1"></i>Human Resources</li>
-                                      <li><i class="fas fa-map-marker-alt pr-1"></i>Minneapolis, MN 55406</li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </td>
-                            <td class="candidate-list-favourite-time text-center">
-                              <a class="candidate-list-favourite order-2 text-danger" href="#"><i class="fas fa-heart"></i></a>
-                              <span class="candidate-list-time order-1 con_center">Shortlisted</span>
-                            </td>
-                            <td>
-                              <ul class="list-unstyled mb-0 d-flex justify-content-end">
-                                <li><a href="#" class="text-primary" data-toggle="tooltip" title="" data-original-title="view"><i class="far fa-eye"></i></a></li>
-                                <li><a href="#" class="text-info" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a></li>
-                                <li><a href="#" class="text-danger" data-toggle="tooltip" title="" data-original-title="Delete"><i class="far fa-trash-alt"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-                          <tr class="candidates-list">
-                            <td class="title">
-                              <div class="thumb">
-                                <img class="img-fluid" src="imgs/cnts/min.png" alt="">
-                              </div>
-                              <div class="candidate-list-details">
-                                <div class="candidate-list-info">
-                                  <div class="candidate-list-title">
-                                    <h5 class="mb-0">Nichole Haynes</h5>
-                                  </div>
-                                  <div class="candidate-list-option">
-                                    <ul class="list-unstyled paddingleftzero">
-                                      <li><i class="fas fa-filter pr-1"></i>Information Technology</li>
-                                      <li><i class="fas fa-map-marker-alt pr-1"></i>Botchergate, Carlisle</li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </td>
-                            <td class="candidate-list-favourite-time text-center">
-                              <a class="candidate-list-favourite order-2 text-danger" href="#"><i class="fas fa-heart"></i></a>
-                              <span class="candidate-list-time order-1 con_center">Shortlisted</span>
-                            </td>
-                            <td>
-                              <ul class="list-unstyled mb-0 d-flex justify-content-end">
-                                <li><a href="#" class="text-primary" data-toggle="tooltip" title="" data-original-title="view"><i class="far fa-eye"></i></a></li>
-                                <li><a href="#" class="text-info" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a></li>
-                                <li><a href="#" class="text-danger" data-toggle="tooltip" title="" data-original-title="Delete"><i class="far fa-trash-alt"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
                         </tbody>
                       </table>
                     </div>
@@ -367,12 +249,69 @@
 
 
             
-            <button class="blue" dnp="home">Start over</button>
+            <button class="blue" dnp="home">Return Home</button>
         </div>
+
+
         <div id="words">
-            <h1>Recieve Words</h1>
+          <div class="centered-image">
+            <img src="imgs/templar.png" style="width:25%;">
+          </div>
+            <h1>Receive Words</h1>
             <p class="center" id="displayedWord">Press a key to recieve a GOD WORD.</p>
+            <div id="flashingText" class="flashing-text" style="display: none;">
+              You have been enlightened!
+          </div>
+            <p style="text-align: center;">The Knights Templar thank you for your allegiance.</p>
         </div>
+
+
+        <div id="buy">
+            <h1>Store</h1>
+
+            <p style="text-align: center;">Purchase from the store.</p>
+
+            <div class="storefront">
+              <div class="product">
+                  <img src="imgs/prods/crickets.jpg" alt="Product 1">
+                  <h2>Crickets</h2>
+                  <p class="item-price">$8.95</p>
+                  <p class="item-count">per 34g</p>
+              </div>
+              <div class="product">
+                  <img src="imgs/prods/locusts.jpg" alt="Product 2">
+                  <h2>Locusts</h2>  
+                  <p class="item-price">$4.95</p>
+                  <p class="item-count">per 20x</p>
+              </div>
+              <div class="product">
+                  <img src="imgs/prods/mealworms.jpg" alt="Product 3">
+                  <h2>Mealworms</h2>
+                  <p class="item-price">$4.99</p>
+                  <p class="item-count">per 8g</p>
+              </div>
+              <div class="product">
+                <img src="imgs/prods/ants.jpg" alt="Product 3">
+                <h2>Ants</h2>
+                <p class="item-price">$6.95</p>
+                <p class="item-count">per 1g</p>
+              </div>
+              <div class="product">
+                <img src="imgs/prods/scorpion.avif" alt="Product 3">
+                <h2>Scorpion</h2>
+                <p class="item-price">$6.50</p>
+                <p class="item-count">per each</p>
+              </div>
+              <div class="product">
+                <img src="imgs/prods/tarantula.jpg" alt="Product 3">
+                <h2>Tarantulas</h2>
+                <p class="item-price">$9.80</p>
+                <p class="item-count">per each</p>
+              </div>
+          </div>
+
+        </div>
+
         <div id="music">
           <h1>Hear</h1>
           <p class="center" id="">Beautiful sounds reverberate.</p>
@@ -570,6 +509,8 @@
     <script src="js/centerpopup.js"></script>
     <script src="js/questions.js"></script>
     <script src="js/music.js"></script>
+    <script src="js/flashing-text.js"></script>
+
 
 
 

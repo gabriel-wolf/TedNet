@@ -104,9 +104,13 @@ const words = [
 
 
 const displayedWord = document.getElementById("displayedWord");
+const flashingText = document.getElementById("flashingText");
+
 
 // Function to generate and display a random word
 function displayRandomWord() {
+  flashingText.style.display = 'block';
+
     const randomIndex = Math.floor(Math.random() * words.length);
     const randomWord = words[randomIndex];
     displayedWord.textContent = randomWord;
@@ -118,7 +122,7 @@ function displayRandomWord() {
    
 }
 
-
 // Add an event listener for key press
 document.addEventListener("keypress", displayRandomWord);
+
 
