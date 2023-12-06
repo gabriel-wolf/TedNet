@@ -24,8 +24,7 @@
     <link rel="stylesheet" href="css/music.css">
     <link rel="stylesheet" href="css/flashing-text.css">
     <link rel="stylesheet" href="css/store.css">
-
-
+    <link rel="stylesheet" href="css/typewriter.css">
 
 
 </head>
@@ -51,6 +50,21 @@
             <p>You do not have the required clearance to access this content.</p>
         </div>
     </div>
+
+    <div class="overlay" id="overlay1">
+      <!-- Large image -->
+      <img id="largeImage" src="imgs/cnts/nemoy.jpg" alt="Large Image">
+    </div>  
+
+    <div class="overlay" id="overlay2">
+      <!-- Large image -->
+      <img id="largeImage" src="imgs/cnts/mary.png" alt="Large Image">
+    </div>  
+
+    <div class="overlay" id="overlay3">
+      <!-- Large image -->
+      <img id="largeImage" src="imgs/cnts/Bon.png" alt="Large Image">
+    </div>  
 
     <button dnp="home" class="back-to-home">Enough</button>
     <button onclick="window.location.href = 'help.html';" class="questionbutton">?</button>
@@ -81,7 +95,7 @@
             </div>
             <div class="button-container">
                 <button class="blue" dnp="words"><i class="fas fa-solid fa-cross"></i></button>
-                <button class="blue" dnp="page3">Forget</button>
+                <button class="blue" onclick="move()" dnp="page3">Forget</button>
                 <button class="blue" dnp="contacts">People</button>
                 <button class="blue" dnp="buy">Buy</button>
                 <!-- <button class="blue" dnp="?????">Remember</button> -->
@@ -99,7 +113,6 @@
         </div>
         
         <div id="page2" style="display: none;">
-
             <p>You went left and found a treasure chest!</p>
             <div class="button-container">
                 <button dnp="home" class="image-button">
@@ -108,8 +121,40 @@
             </div>
         </div>
         <div id="page3" style="display: none;">
-            <p>You went right and fell into a pit. Game over!</p>
-            <button class="blue" dnp="home">Start over</button>
+
+          <div class="typewriter">
+            <h1>Clearing Memory...<h1>
+          </div>
+
+          <p>
+            This process will free up space in your mind!
+          </p>
+          <div id="myBar" class="w3-green" style="height:24px;width:0"></div>
+          <br>
+          <p style="visibility: hidden;" class="completed" id="completed">PROCESS COMPLETE</p>
+
+            
+          <script>
+          function move() {
+            var elem = document.getElementById("myBar");  
+            var textElem = document.getElementById("completed"); 
+            var width = 1;
+            var id = setInterval(frame, 100);
+            function frame() {
+              if (width >= 100) {
+                clearInterval(id);
+                textElem.style.visibility = 'visible';
+              } else {
+                width++; 
+                elem.style.width = width + '%'; 
+              }
+            }
+          }
+
+          </script>
+
+
+            <!-- <button class="blue" dnp="home">Go Back to Life</button> -->
         </div>
         <div id="contacts" style="display: none;">
             <h1>People</h1>
@@ -162,9 +207,9 @@
                             </td>
                             <td>
                               <ul class="list-unstyled mb-0 d-flex justify-content-end max-content textaligncenter">
-                                <li id="show-popup-button"><button class="butt bg-blue"><a href="#" class="text-primary whitetext" data-toggle="tooltip" title="" data-original-title="view"><i class="far fa-eye"></i> SEE</a></button></li>
+                                <li><button onclick="showLarge1()" class="butt bg-blue"><a href="#" class="text-primary whitetext" data-toggle="tooltip" title="" data-original-title="view"><i class="far fa-eye"></i> SEE</a></button></li>
                                 <li><button class="butt bg-green"><a href="#" class="text-info whitetext" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-check"></i> BELIEVE</a></button></li>
-                                <li><button class="butt bg-red"><a href="#" class="text-danger whitetext" data-toggle="tooltip" title="" data-original-title="Delete"><i class="far fa-trash-alt"></i> FORGET</a></button></li>
+                                <li><button onclick="move()" dnp="page3" class="butt bg-red"><a href="#" class="text-danger whitetext" data-toggle="tooltip" title="" data-original-title="Delete"><i class="far fa-trash-alt"></i> FORGET</a></button></li>
                               </ul>
                             </td>
                           </tr>
@@ -195,9 +240,9 @@
                             </td>
                             <td>
                               <ul class="list-unstyled mb-0 d-flex justify-content-end max-content textaligncenter">
-                                <li onclick="openPopup()"><button class="butt bg-blue"><a href="#" class="text-primary whitetext" data-toggle="tooltip" title="" data-original-title="view"><i class="far fa-eye"></i> SEE</a></button></li>
+                                <li onclick="showLarge2()"><button class="butt bg-blue"><a href="#" class="text-primary whitetext" data-toggle="tooltip" title="" data-original-title="view"><i class="far fa-eye"></i> SEE</a></button></li>
                                 <li><button class="butt bg-green"><a href="#" class="text-info whitetext" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-check"></i> BELIEVE</a></button></li>
-                                <li><button class="butt bg-red"><a href="#" class="text-danger whitetext" data-toggle="tooltip" title="" data-original-title="Delete"><i class="far fa-trash-alt"></i> FORGET</a></button></li>
+                                <li><button onclick="move()" dnp="page3" class="butt bg-red"><a href="#" class="text-danger whitetext" data-toggle="tooltip" title="" data-original-title="Delete"><i class="far fa-trash-alt"></i> FORGET</a></button></li>
                               </ul>
                             </td>
                           </tr>
@@ -228,9 +273,9 @@
                             </td>
                             <td>
                               <ul class="list-unstyled mb-0 d-flex justify-content-end max-content textaligncenter">
-                                <li onclick="openPopup()"><button class="butt bg-blue"><a href="#" class="text-primary whitetext" data-toggle="tooltip" title="" data-original-title="view"><i class="far fa-eye"></i> SEE</a></button></li>
+                                <li onclick="showLarge3()"><button class="butt bg-blue"><a href="#" class="text-primary whitetext" data-toggle="tooltip" title="" data-original-title="view"><i class="far fa-eye"></i> SEE</a></button></li>
                                 <li><button class="butt bg-green"><a href="#" class="text-info whitetext" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-check"></i> BELIEVE</a></button></li>
-                                <li><button class="butt bg-red"><a href="#" class="text-danger whitetext" data-toggle="tooltip" title="" data-original-title="Delete"><i class="far fa-trash-alt"></i> FORGET</a></button></li>
+                                <li><button onclick="move()" dnp="page3" class="butt bg-red"><a href="#" class="text-danger whitetext" data-toggle="tooltip" title="" data-original-title="Delete"><i class="far fa-trash-alt"></i> FORGET</a></button></li>
                               </ul>
                             </td>
                           </tr>
